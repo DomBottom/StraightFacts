@@ -1,0 +1,31 @@
+doctype html
+|
+|
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title #{title}
+body
+    h1 #{message}
+    div#Examples
+        form
+            input#ExValue(type="number", min="0")
+            button#ExSubmit(type="button") Submit
+        button#ExClear(type="button") Clear List
+        ul#ExFacts
+    |
+    div#Emails
+        form#EmForm(method="POST", action="email")
+            label To: <br/>
+            input#EmTo(type="text", name="To")
+            <br/>
+            label Subject: <br/>
+            input#EmSubject(type="text", name="Subject") 
+            <br/>
+            label Body: <br/>
+            input#EmValue(type="number", min="0", name="Value") 
+            <br/>
+            input#EmSubmit(type="submit")
+script(src="static/javascripts/script.js")
