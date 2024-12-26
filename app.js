@@ -33,7 +33,7 @@ app.post('/', function(req, res){
     service: 'gmail',
     auth: {
       user: "straightfactsproject@gmail.com",
-      pass: "j%M#4diFm5VRiZ!*rque"
+      pass: ""
     }
   });
   const mailFields = {
